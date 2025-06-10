@@ -3,7 +3,7 @@
     /* phones             */
     @media (max-width: 600px){
       #p{
-        height: 70px;
+        height: 80px;
       }
       .header{
         /* background: #000; */
@@ -58,7 +58,7 @@
     position: absolute;
     width: 84%;
     
-    top: 15%;       
+    top: 13%;       
       left: 8%;  
       text-align: center;
 background: unset;
@@ -68,9 +68,21 @@ font-size: 0.95rem;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 word-spacing: 3px;
 line-height: 24px;
-
+animation: slideTop 2s ease forwards;
+    animation-delay: 0.3s;
 
 }
+@keyframes slideTop {
+    0% {
+      transform: translateY(100px);
+      opacity:0;
+
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 .domains-section {
   
   padding: 2rem;
@@ -180,6 +192,10 @@ marquee i{
   height: 50px;
   width: 50px;
 }
+marquee:hover span {
+  animation-play-state: paused;
+}
+
 .collab-section {
  
   align-items: center;
@@ -321,6 +337,16 @@ marquee i{
   padding: 10px;
   background: unset;
 }
+/* Reveal animation for reach & sponsor items */
+.reveal-slide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-slide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .reach-points {
   display: grid;
@@ -330,6 +356,21 @@ marquee i{
   margin: 6%;
   background: unset;
 }
+/* 1. Overflow parent container to hide expansion */
+.collab-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  /* Ensure smooth zoom */
+}
+
+/* 2. On hover apply scale */
+.collab-images img:hover {
+  transform: scale(1.1); /* 110% size on hover */
+}
+
+
 
 .reach-item {
   
@@ -462,6 +503,16 @@ font-weight: 645;
   font-size: 1rem;
   color: wheat;
   margin: 0px;
+}
+.domain-card, .achieve-card, .reach-box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.domain-card.reveal, .achieve-card.reveal, .reach-box.reveal {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -612,7 +663,7 @@ font-weight: 645;
   }
 #img2{
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
