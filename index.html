@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
 
 <section id="p">
   <div class="header" >
@@ -301,6 +302,155 @@ We build the future, one race at a time.
     <p>© 2025 NIAMT Racing Club</p>
   </div>
 </section>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    anime({
+      targets: '#img1',
+      translateX: [-200, 0],
+      opacity: [0, 1],
+      duration: 1500,
+      easing: 'easeOutQuad',
+      complete: () => {
+       
+      }
+    });
+
+    anime({
+      targets: '#h1, #h2, #h3',
+      translateY: [50, 0],
+      opacity: [0, 1],
+      duration: 1400,
+      easing: 'easeOutExpo',
+      delay: anime.stagger(200)
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+  const els = document.querySelectorAll('.domain-card, .achieve-card, .reach-box');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  els.forEach(el => {
+    observer.observe(el);
+  });
+});
+document.querySelectorAll('.domain-card').forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    anime({
+      targets: card,
+      scale: 1.05,
+      boxShadow: ['0 4px 10px rgba(0,0,0,0.1)', '0 8px 20px rgba(0,0,0,0.3)'],
+      duration: 100,
+      easing: 'easeOutQuad'
+    });
+  });
+  card.addEventListener('mouseleave', () => {
+    anime({
+      targets: card,
+      scale: 1,
+      boxShadow: ['0 8px 20px rgba(0,0,0,0.3)', '0 4px 10px rgba(0,0,0,0.1)'],
+      duration: 100,
+      easing: 'easeOutQuad'
+    });
+  });
+});
+
+
+
+  gsap.registerPlugin(ScrollTrigger);
+  const mm = gsap.matchMedia();
+
+  mm.add("(min-width: 600px)", () => {
+    let tl = gsap.timeline({ repeat: -1 });
+    tl.to(".awesome-marquee span", {
+      xPercent: -50,
+      ease: "none",
+      duration: 10,
+      modifiers: {
+        xPercent: gsap.utils.wrap(-50, 0)
+      }
+    });
+  });
+window.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.domain-card, .achieve-card, .reach-box');
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(el => {
+    el.classList.add('fade-slide');
+    observer.observe(el);
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const targets = document.querySelectorAll('.domain-card, .achieve-card, .reach-box');
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  targets.forEach(el => {
+    el.classList.add('fade-slide');
+    observer.observe(el);
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.domain-card');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const reachBoxes = document.querySelectorAll('.reach-box');
+  const sponsorPoints = document.querySelectorAll('.our-reach .reach-item');
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  reachBoxes.forEach(el => observer.observe(el));
+  sponsorPoints.forEach(el => observer.observe(el));
+});
+
+
+
+</script>
+
 
 </body>
 </html>
