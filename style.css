@@ -14,7 +14,7 @@
     width: 50px;
     background: unset;
     margin: 2%;
-    margin-top: 3%;
+    margin-top: 5%;
     justify-content: center;
     
     }
@@ -25,9 +25,8 @@
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 3px;
-  color: #f5f1f1;
-  margin: auto;
-  padding: auto;
+  margin-top: 0px;
+  padding-top: 0px;
   text-decoration: underline;
     }
     #h2{
@@ -285,8 +284,8 @@ marquee i{
 }
 
 .achieve-icon {
-  height: 90px;
-  width: 120px;
+  height: 70px;
+  width: 90px;
   margin-bottom: 1rem;
   background: unset;
 }
