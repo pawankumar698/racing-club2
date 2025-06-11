@@ -99,6 +99,14 @@ many Asian, European and Indian competitions
 
   </div>
 </section>
+<section id="video-section">
+  <video id="auto-video" width="640"  muted loop playsinline>
+    <source src="track.0139.mp4" type="video/mp4">
+    <source src="track.0139.mp4" type="video/webm">
+    
+  </video>
+</section>
+
 <section>
   <div>
     <h2 class="legacy">Our Legacy</h2>
@@ -301,17 +309,19 @@ We build the future, one race at a time.
   <h2 class="sponsors-title">Our Previous Sponsors</h2>
   <div class="sponsors-marquee">
     <div class="img5">
-      <img src="spo3.jfif" alt="Sponsor 1">
-      <img src="spo10.png" alt="Sponsor 2">
-      <img src="spo4.png" alt="Sponsor 3">
-      <img src="spo5.png" alt="Sponsor 4">
-      <img src="spo6.png" alt="Sponsor 5">
+      <img src="club sponsors (1).png" alt="Sponsor 1">
+      <img src="club sponsors (2).png" alt="Sponsor 2">
+      <img src="club sponsors (3).png" alt="Sponsor 3">
+      <img src="club sponsors (4).png" alt="Sponsor 4">
+      <img src="club sponsors (6).png" alt="Sponsor 5">
+      
+
       <!-- Repeat for continuous loop -->
-      <img src="spo3.jfif" alt="Sponsor 1">
-      <img src="spo10.png" alt="Sponsor 2">
-      <img src="spo4.png" alt="Sponsor 3">
-      <img src="spo5.png" alt="Sponsor 4">
-      <img src="spo6.png" alt="Sponsor 5">
+      <img src="club sponsors (1).png" alt="Sponsor 1">
+      <img src="club sponsors (2).png" alt="Sponsor 2">
+      <img src="club sponsors (3).png" alt="Sponsor 3">
+      <img src="club sponsors (4).png" alt="Sponsor 4">
+      <img src="club sponsors (6).png" alt="Sponsor 5">
     </div>
   </div>
 </section>
@@ -507,6 +517,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('click', () => content.style.display = 'none');
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('auto-video');
+  
+  // Setup the observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play().catch(e => console.warn('Play failed:', e));
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.5 }); // 50% of video must be visible
+
+  observer.observe(video);
+});
+
+
 
 </script>
 
