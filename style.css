@@ -68,7 +68,8 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0;
+  
+  margin-right: 0px;
   margin-top: 7%;
   background: #1a2a3a;
   min-width: 160px;
@@ -83,8 +84,8 @@
   #button{
     background: unset;
     color: wheat;
+    margin-left: 150px;
     
-    margin: 0%;
     margin-top: 15px;
     display: flex;
     justify-content: right;
@@ -125,7 +126,9 @@
 .dropdown-content a:hover {
   background: wheat;
 }
-
+#video-section{
+  margin-top: 70px;
+}
 /* Show dropdown on hover */
 .dropdown:hover  {
   display: block;
