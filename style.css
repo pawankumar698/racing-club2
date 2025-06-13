@@ -19,7 +19,7 @@
     width: 50px;
     background: unset;
     margin: 2%;
-    margin-top: 5%;
+    margin-top: 6%;
     justify-content: center;
     
     }
@@ -84,7 +84,7 @@
   #button{
     background: unset;
     color: wheat;
-    margin-left: 100px;
+    margin-left: 80px;
     
     margin-top: 15px;
     display: flex;
