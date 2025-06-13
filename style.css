@@ -685,6 +685,8 @@ font-weight: 645;
   font-size: 2rem;
   color: #e6ca76;
   margin-bottom: 30px;
+    backdround: unset;
+
 }
 
 /* Main review text */
