@@ -20,13 +20,14 @@
   <div class="dropdown">
   <h2 id="button" >☰ </h2>
   <div class="dropdown-content">
-    <a href=".domains-section">Domains</a>
-    <a href=".announcement">Announcement</a>
-    <a href=".legacy">Legacy</a>
-    <a href=".achieve-section">Achievements</a>
-    <a href=".our-reach">Reach</a>
-    <a href=".sponsors-section">Why Sponsor?</a>
-    <a href="#previous-sponsors">Sponsors</a>
+    <a href="#domains-section">Domains</a>
+    <a href="#announcement">Announcement</a>
+    <a href="#legacy">Legacy</a>
+    <a href="#achieve-section">Achievements</a>
+    <a href="#our-reach">Reach</a>
+    <a href="#sponsors-section">Why Sponsor?</a>
+    <a href="#previous-sponsors">Previous Sponsors</a>
+    <a href="#previous-sponsors">Our Alumni</a>
   </div>
 </div>
 
@@ -52,7 +53,7 @@ many Asian, European and Indian competitions
 <div>
   
 </div>
-<section class="domains-section">
+<section id="domains-section">
   <h2 class="section-title">Our Engineering Domains</h2>
   <div class="domain-cards">
 
@@ -91,7 +92,7 @@ many Asian, European and Indian competitions
 <section>
   <div >
     
-    <h2 class="announcement">
+    <h2 id="announcement">
  Announcement and Ongoing projects</h2>
     <marquee><i class="fas fa-bullhorn"></i>WE ARE GEARING UP FOR SUPRA SAE 2025</marquee>
     <p class="announce">NIAMT Racing Club is actively building its formula racing car for SUPRA SAE 2025!.  From chassis welding to powertrain setup — the journey has begun. Stay tuned for updates from the garage! 
@@ -99,17 +100,18 @@ many Asian, European and Indian competitions
 
   </div>
 </section>
-<section id="video-section">
-  <video id="auto-video" width="640"  muted loop playsinline>
-    <source src="track.0139.mp4" type="video/mp4">
-    <source src="track.0139.mp4" type="video/webm">
-    
-  </video>
+<section>
+  <div>
+    <video id="video"   src="track.0139.mp4" width="100%" controls autoplay muted>
+      <source src="track.0139.mp4">
+      <source src="track.0139.WebM">
+    </video>
+  </div>
 </section>
 
 <section>
   <div>
-    <h2 class="legacy">Our Legacy</h2>
+    <h2 id="legacy">Our Legacy</h2>
     <div class="collab-section">
 
       <!-- Right: 4-image collage -->
@@ -138,7 +140,7 @@ We build the future, one race at a time.
   
   </div>
 </section>
-<section class="achieve-section">
+<section id="achieve-section">
   <h2 class="section-topic">Our Achievements</h2>
   <div class="achieve-cards">
 
@@ -212,7 +214,7 @@ We build the future, one race at a time.
   </div>
 </section>
 
-<section class="our-reach">
+<section id="our-reach">
   <h2 id="reach">Our Reach</h2>
   <div class="reach-points">
     <div class="reach-item">
@@ -305,7 +307,7 @@ We build the future, one race at a time.
   </div>
 </section>
 
-<section class="sponsors-section">
+<section id="sponsors-section">
   <h2 class="sponsors-title">Our Previous Sponsors</h2>
   <div class="sponsors-marquee">
     <div class="img5">
@@ -326,6 +328,20 @@ We build the future, one race at a time.
   </div>
 </section>
 
+
+<section id="review" class="review-section">
+  <div class="review-card">
+    <i class="fas fa-quote-left review-quote-icon"></i>
+    <img src="WhatsApp Image 2024-12-22 at 04.49.56.jpeg" alt="Reviewer photo" class="review-photo">
+    
+    <p class="review-text">
+      “Being part of Team Thrusters has been amazing—I've learned so much in design, engineering, and real-world racing!”
+    </p>
+    <p class="review-author">— Pawan Kumar</p>
+  </div>
+</section>
+
+
 <section>
   <div>
     <h2>
@@ -333,7 +349,7 @@ We build the future, one race at a time.
     </h2>
   </div>
 </section>
-<section class="contact-us">
+<section id="contact-us">
   <h2>Connect With Us</h2>
   <div class="social-icons">
     <a href="https://www.linkedin.com/company/nifft-racing-thrusters/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -345,6 +361,9 @@ We build the future, one race at a time.
     <p>© 2025 NIAMT Racing Club</p>
   </div>
 </section>
+
+
+      
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     anime({
@@ -519,22 +538,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const video = document.getElementById('auto-video');
-  
-  // Setup the observer
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        video.play().catch(e => console.warn('Play failed:', e));
-      } else {
-        video.pause();
-      }
-    });
-  }, { threshold: 0.5 }); // 50% of video must be visible
-
-  observer.observe(video);
-});
 
 
 
