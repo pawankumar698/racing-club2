@@ -106,9 +106,9 @@
   position: absolute;
 
   background: #1a2a3a;
-  min-width: 160px;
+  min-width: 200px;
   
-  z-index: 100;
+  z-index: 120;
 }
 
 /* Links inside dropdown */
@@ -117,8 +117,8 @@
   padding: 8px 12px;
   text-decoration: none;
   display: block;
-  font-size: 0.8rem;
-  font-weight: 350;
+  font-size: 1rem;
+  font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
