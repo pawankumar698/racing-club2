@@ -139,7 +139,7 @@
     position: absolute;
     width: 84%;
     
-    top: 12%;       
+    top: 13%;       
       left: 8%;  
       text-align: center;
 background: unset;
@@ -164,7 +164,16 @@ animation: slideTop 2s ease forwards;
       opacity: 1;
     }
   }
-.domains-section {
+
+
+
+
+
+  #video{
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+#domains-section {
   
   padding: 2rem;
   margin-bottom: 0px;
@@ -259,7 +268,7 @@ marquee{
   
   
 }
-.announcement{
+#announcement{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: wheat;
    font-size: 1.4rem;
@@ -283,7 +292,7 @@ marquee:hover span {
   justify-content: space-between;
   gap: 80px;
   flex-wrap: wrap;
-  padding: 70px;
+  padding: 50px;
 }
 
 .collab-text {
@@ -292,7 +301,7 @@ marquee:hover span {
   background: unset;
 }
 
-.legacy{
+#legacy{
   font-size: 1.4rem;
   margin-top: 80px;
    border-bottom: 0px;
@@ -345,7 +354,7 @@ marquee:hover span {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.achieve-section {
+#achieve-section {
   
   background: unset;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -402,7 +411,7 @@ marquee:hover span {
   font-weight: 350;
   
 }
-.our-reach {
+#our-reach {
   background: unset;
  
   padding: 50px;
@@ -499,7 +508,7 @@ marquee:hover span {
 }
 
 
-.contact-us {
+#contact-us {
   
   padding: 40px 20px;
   text-align: center;
@@ -640,6 +649,63 @@ font-weight: 645;
     transform: translateX(-50%);
   }
 }
+
+
+/* Review section wrapper */
+.review-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #0d1b2a;
+  color: wheat;
+}
+
+/* Review card box */
+.review-card {
+  display: inline-block;
+  max-width: 300px;
+  background: #1a2a3a;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Reviewer photo */
+.review-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  display: block;
+  border: 3px solid #e6ca76;
+}
+
+/* Quote icon styling */
+.review-quote-icon {
+  font-size: 2rem;
+  color: #e6ca76;
+  margin-bottom: 30px;
+}
+
+/* Main review text */
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  background: #1a2a3a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 350;
+}
+
+/* Author name */
+.review-author {
+  font-weight: bold;
+  font-size: 1rem;
+  background: #1a2a3a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 640;
+}
+
 
   }
 
