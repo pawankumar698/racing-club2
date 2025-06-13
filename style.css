@@ -106,7 +106,7 @@
   position: absolute;
 
   background: #1a2a3a;
-  min-width: 200px;
+  min-width: 160px;
   
   z-index: 100;
 }
@@ -115,6 +115,7 @@
 .dropdown-content a {
   color: wheat;
   padding: 8px 12px;
+    margin: 10px;
   text-decoration: none;
   display: block;
   font-size: 0.9rem;
