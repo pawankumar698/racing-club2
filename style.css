@@ -678,6 +678,7 @@ font-weight: 645;
   margin: 0 auto 15px;
   display: block;
   border: 3px solid #e6ca76;
+    background: unset;
 }
 
 /* Quote icon styling */
@@ -685,6 +686,7 @@ font-weight: 645;
   font-size: 2rem;
   color: #e6ca76;
   margin-bottom: 30px;
+    background: unset;
 }
 
 /* Main review text */
