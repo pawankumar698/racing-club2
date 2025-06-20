@@ -422,6 +422,14 @@ marquee:hover span {
   background: unset;
 }
 
+#our-sponsors {
+  background: unset;
+ 
+  padding: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: unset;
+}
+        
 #reach{
   font-size: 1.4rem;
   color: wheat;
