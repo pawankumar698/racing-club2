@@ -139,7 +139,7 @@
     position: absolute;
     width: 84%;
     
-    top: 13%;       
+    top: 14%;       
       left: 8%;  
       text-align: center;
 background: unset;
@@ -372,6 +372,7 @@ marquee:hover span {
   display: grid;
   grid-template-columns: repeat(2, minmax(125px, 5fr));
   gap: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 
@@ -382,7 +383,7 @@ marquee:hover span {
   border-radius: 12px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .achieve-card:hover {
@@ -401,6 +402,7 @@ marquee:hover span {
   font-size: 0.9rem;
   font-weight: 645;
   background: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .achieve-card p {
@@ -409,6 +411,7 @@ marquee:hover span {
   color: wheat;
   font-size: 0.8rem;
   font-weight: 350;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 #our-reach {
