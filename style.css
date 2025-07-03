@@ -1606,7 +1606,9 @@ marquee:hover span {
   background-color: #0d1b2a;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
-
+.subtitle{
+  display: none;
+}
 .reach-box h3 {
   font-size: 1.2rem;
 font-weight: 645;
