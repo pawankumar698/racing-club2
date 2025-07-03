@@ -318,12 +318,14 @@ animation: slideTop 2s ease forwards;
   margin-top: 2%;
   padding-top: 2%;
   margin-bottom: 6%;
+  padding-bottom: 4%;
   text-align: center;
 }
 marquee i{
   color: #007bff;
   height: 50px;
   width: 50px;
+  
 }
 marquee:hover span {
   animation-play-state: paused;
