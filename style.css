@@ -208,7 +208,7 @@ animation: slideTop 2s ease forwards;
 .section-title {
   text-align: center;
   font-size: 1.6rem;
-  margin-top: 10%;
+  margin-top: 6%;
   
   color: wheat;
   
@@ -217,7 +217,10 @@ animation: slideTop 2s ease forwards;
 
 .domain-cards {
   display: grid;
-  margin: 10%;
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
   
   grid-template-columns: repeat(2, minmax(250px, 5fr));
   background: unset;
