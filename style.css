@@ -1147,14 +1147,14 @@ marquee{
   direction: "right"; 
   font-family: 'Audiowide', cursive;
   color: wheat;
-   font-size: 1.2rem;
+   font-size: 1rem;
   padding: 10px;
  
   animation: scroll 2s linear infinite;
 }
 .announce{
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: wheat;
   padding-top: 0px;
@@ -1208,7 +1208,7 @@ marquee:hover span {
 }
 
 .collab-text p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 30px;
   color: wheat;
   padding-top: 0px;
@@ -1312,7 +1312,7 @@ marquee:hover span {
 footer {
         background: unset;
         color: wheat;
-        padding: 50px 20px;
+        padding: 30px 10px;
         text-align: center;
     }
 
@@ -1345,8 +1345,8 @@ background: unset;}
        background: #1a2a3a;
         box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         margin-top: 0%;
-  margin-left: 4%;
-  margin-right: 4% ;
+  margin-left: 0%;
+  margin-right: 0% ;
   margin-bottom: 6%;
     }
 
@@ -1657,5 +1657,6 @@ display: none;
 
     }
   }
+
 
 
