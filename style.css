@@ -1278,7 +1278,7 @@ marquee:hover span {
 .spo-item p strong{
    background: unset;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   font-weight: 645;
   
@@ -1370,7 +1370,7 @@ background: unset;}
         background: #a7a6a6;
         color: #050c30;
         font-size: 1rem;
-        width: 90% ;
+        width: 85% ;
     }
 
     .contact-card button {
@@ -1503,7 +1503,7 @@ background: unset;}
   display: none;
 }
 .reach-box h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 font-weight: 645;
   color: wheat;
   margin: 0px;
@@ -1512,7 +1512,7 @@ font-weight: 645;
 }
 
 .reach-box p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: wheat;
   margin: 0px;
 }
@@ -1657,6 +1657,7 @@ display: none;
 
     }
   }
+
 
 
 
