@@ -902,7 +902,7 @@ font-weight: 645;
     width: 50px;
     background: unset;
     margin: 2%;
-    margin-top: 6%;
+    margin-top: 7%;
     justify-content: center;
     
     }
@@ -950,7 +950,7 @@ font-weight: 645;
   flex-wrap: nowrap;
   justify-content: center;
   justify-items: center;
-  opacity: 0.2;
+  opacity: 0.1;
   background: unset;
 }
   /* Dropdown container already styled */
@@ -980,7 +980,7 @@ font-weight: 645;
 /* Dropdown content */
 .dropdown-content {
   position: absolute;
-  top: 120%;
+  top: 110%;
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
   background: #1a2a3a;
@@ -1081,9 +1081,8 @@ animation: slideTop 2s ease forwards;
   display: grid;
   
   margin-top: 10%;
-  margin-left: 2%;
-  margin-right: 3%;
-  grid-template-columns: repeat(1, minmax(300px, 2fr));
+  
+  grid-template-columns: repeat(1, minmax(250px, 2fr));
   background: unset;
   gap: 2rem;
 }
@@ -1193,27 +1192,15 @@ marquee:hover span {
   animation-play-state: paused;
 }
 
-.collab-section {
- 
-  align-items: center;
-  justify-content: space-between;
-  gap: 80px;
-  flex-wrap: wrap;
-  padding: 50px;
-}
 
-.collab-text {
-  flex: 1;
-  max-width: 700px;
-  background: unset;
-}
+
+
 
 #legacy{
   font-size: 1.4rem;
   margin-top: 80px;
-   border-bottom: 0px;
-   padding-bottom: 0px;
-   margin-bottom: 0px;
+      border-bottom: 0px;
+      padding-bottom: 0px;
   color: wheat;
   background: unset;
   text-align: center;
@@ -1225,16 +1212,17 @@ marquee:hover span {
   font-size: 1rem;
   line-height: 30px;
   color: wheat;
+  padding-top: 0px;
   background: unset;
   gap: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
-  margin-top: 0%;
+   
   margin-left: 6%;
   margin-right: 6%;
   margin-bottom: 6%;
   font-weight: 350;
-  
+  border-top: 0px;
   border-left: 1px solid #e6d39a;
   border-bottom: 4px solid #e6d39a;
   border-top: 0.5px solid #e6d39a;
@@ -1244,21 +1232,15 @@ marquee:hover span {
   background: unset;
 }
 
-.collab-images {
-  display: grid;
-  
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  flex: 1;
-  max-width: 600px;
-  background: unset;
-}
+ 
 
 .collab-images img {
-  width: 110%;
+  width: 100%;
   height: 110%;
   object-fit: cover;
-  border-radius: 10px;
+ margin-top: 4%;
+ margin-bottom: 6%;
+ opacity: 0.70;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 #our-spo {
@@ -1329,7 +1311,7 @@ marquee:hover span {
 
 
 footer {
-        background: #0d1b2a;
+        background: unset;
         color: wheat;
         padding: 50px 20px;
         text-align: center;
@@ -1348,19 +1330,21 @@ footer {
         font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 9%;
-  background: #1a2a3a;
+  background: unset;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 350; 
 background: unset;}
 
-    /* Contact Card */
+     #form{
+      background: unset;
+     }
     .contact-card {
-        background: unset;
+        
         padding: 20px;
         border-radius: 15px;
         max-width: 500px;
-       
-        box-shadow: 0 4px 15px wheat;
+       background: #1a2a3a;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         margin-top: 0%;
   margin-left: 6%;
   margin-right: 10% ;
@@ -1371,25 +1355,30 @@ background: unset;}
         margin-bottom: 15px;
         font-size: 1.2rem;
         color: wheat;
+        background: unset;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: unset;
     }
 
     .contact-card input,
     .contact-card textarea {
-        width: 100%;
-        padding: 12px;
-        margin: 10px 0;
+        padding: 10px;
+        margin: 15px  ;
         border: none;
-       
+        display: flex;
         border-radius: 8px;
         outline: none;
-        background: #6e6363;
+        background: #a7a6a6;
         color: #050c30;
         font-size: 1rem;
+        width: 86% ;
     }
 
     .contact-card button {
-        background: #072853;
+        background: #071a33;
+        
+        justify-content: center;
+        text-align: center;
         color: wheat;
         border: none;
         padding: 12px 20px;
@@ -1410,13 +1399,16 @@ background: unset;}
     /* Get in Touch */
     .contact-info {
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.8m;
         margin-top: 25%;
+         background: unset;
+
     }
 
     .contact-info div {
         margin: 10px 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: unset;
     }
 
     .contact-info i {
@@ -1425,15 +1417,14 @@ background: unset;}
         
     }
 
-    /* Responsive */
-    @media (max-width: 600px) {
+    
         footer h2 {
             font-size: 1.6rem;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         background: unset;
+
         }
-        .contact-card {
-            width: 100%;
-        }
+        
 
 #contact-us {
   
