@@ -205,7 +205,7 @@
 .achieve-cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(125px, 5fr));
-  gap: 1.2rem;
+  gap: 1.5rem;
   
 }
 
@@ -226,7 +226,7 @@
 
 .achieve-icon {
   height: 70px;
-  width: 120px;
+  width: 90px;
   margin-bottom: 1rem;
   background: unset;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -558,4 +558,5 @@ background: unset;}
   transform: scale(1.2);
   background: unset;
 }
+
 }
