@@ -1345,8 +1345,8 @@ background: unset;}
        background: #1a2a3a;
         box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         margin-top: 0%;
-  margin-left: 0%;
-  margin-right: 0% ;
+  margin-left: 2%;
+  margin-right: 2% ;
   margin-bottom: 6%;
     }
 
@@ -1361,7 +1361,7 @@ background: unset;}
 
     .contact-card input,
     .contact-card textarea {
-        padding: 8px;
+        padding: 7px;
         margin: 20px  ;
         border: none;
         display: flex;
@@ -1370,7 +1370,7 @@ background: unset;}
         background: #a7a6a6;
         color: #050c30;
         font-size: 1rem;
-        width: 82% ;
+        width: 80% ;
     }
 
     .contact-card button {
@@ -1657,6 +1657,7 @@ display: none;
 
     }
   
+
 
 
 
