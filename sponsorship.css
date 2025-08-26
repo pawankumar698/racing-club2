@@ -188,106 +188,7 @@
 
 
 
-#achieve-section {
-  
-  background: unset;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.section-topic {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 3rem;
-  margin-top: 4rem;
-  color: wheat;
-}
-
-.achieve-cards {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(125px, 5fr));
-  gap: 1.2rem;
-  
-}
-
-.achieve-card {
-  background: unset;
-  margin: 8%;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-}
-
-.achieve-card:hover {
-  transform: translateY(-5px);
-}
-
-.achieve-icon {
-  height: 70px;
-  width: 120px;
-  margin-bottom: 1rem;
-  background: unset;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.achieve-card h3 {
-  margin: 0 0 0.5rem;
-  color: wheat;
-  font-size: 0.9rem;
-  font-weight: 645;
-  background: unset;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.achieve-card p {
-  margin: 0;
-  background: unset;
-  color: wheat;
-  font-size: 0.8rem;
-  font-weight: 350;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-}
-
-        /* Border color classes */
-.pic1 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-.pic2{
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-.pic3 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-.pic4 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-
  
-
-
-
-.pic5 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-.pic6 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-.pic7 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
-.pic8 {
-  border-left: 6px solid #e6ca76;
-  border-bottom: 2px solid #e6ca76;
-}
 
 #our-reach {
   background: unset;
@@ -638,5 +539,6 @@ background: unset;}
 
 
 }
+
 
 
